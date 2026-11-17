@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-primary: "Open Sans", sans-serif;
+  --color-primaryColor: #1A73E8;
+  --color-night: #1B1E24;
+  --color-day: #FFFFFF;
+  --color-gray-section: #242831;
+  --color-light-section: #F1F3F4;
+  --container-area: 1240px;
+}
+
+@layer {
+  *{@apply font-primary}
+  body{ @apply bg-day bg-gray-50 }
+}
