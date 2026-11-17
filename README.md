@@ -20,8 +20,8 @@ If you are developing a production application, we recommend using TypeScript wi
 Make sure you have Node.js and npm installed on your machine.
 Then run these commands in the project folder: 
 
-npm install
-npm run dev
+- npm install
+- npm run dev
 
 After that, Vite will start the app and show a local URL in the terminal, usually:
 http://localhost:5173
@@ -30,8 +30,8 @@ Open that URL in your browser to view the project.
 
 other comment:
 
-npm run build
-npm run preview
+- npm run build
+- npm run preview
 
 This builds the app for production and previews it locally.
 <!-- --------------------------------------------------------------- -->
@@ -39,7 +39,7 @@ This builds the app for production and previews it locally.
 Develop BY :
 1. SAIMUN AL BASHAR 
 2. MOMRASE MAHMUD (MIM)
-TESTED BY - HASAN ALI (DEV ENG. AND OWNER OF COMPANY)
+3. TESTED BY - HASAN ALI (DEV ENG. AND OWNER OF COMPANY)
 
 ## technology's-
-React, vit, tailwindcss, motion.dev,  
+React, vit, tailwindcss, motion.dev, lucide.div, 

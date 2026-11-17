@@ -13,5 +13,8 @@
 
 @layer {
   *{@apply font-primary}
+
   body{ @apply bg-day bg-gray-50 }
+
+  .content-view {@apply max-w-area px-5}
 }
