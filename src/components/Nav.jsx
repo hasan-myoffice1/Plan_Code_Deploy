@@ -18,18 +18,18 @@ const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className='flex flex-wrap items-center gap-10'>
+        <nav className='flex flex-wrap items-center gap-10 uppercase font-semibold'>
             <NavLink to="/" end className={navLinkClass}>Home</NavLink>
 
             <div className="relative">
                 <button
                     type="button"
                     onClick={() => setIsOpen(!isOpen)}
-                    className="flex items-center gap-2 text-gray-700 transition-colors hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400"
+                    className="flex items-center gap-2 text-gray-700 transition-colors hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400 uppercase"
                     aria-expanded={isOpen}
                 >
                     <NavLink to="/services" className={navLinkClass}>Services</NavLink>
-                    <ChevronDown className='text-current' />
+                    <ChevronDown className='text-primaryColor' />
                 </button>
 
                 {isOpen && (
