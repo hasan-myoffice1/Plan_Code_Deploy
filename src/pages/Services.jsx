@@ -5,6 +5,7 @@ import Hero from '../containers/Hero';
 import HeroServices from '/src/assets/services_page_img.png';
 import { PanelsTopLeft, CircleCheck, PencilRuler, PencilSparkles, ChartLine } from 'lucide-react';
 import Button from '../components/Button';
+import CountdownSec from '../containers/CountdownSec';
 
 const title = {subtitle:"Our Services",text:'Professional web solutions designed for', highlight:'modern businesses', afterText:""}
 
@@ -126,6 +127,7 @@ const Services = () => {
                  }
               </div>
            </section>
+           <CountdownSec />
            <Footer/>
         </>
     );
