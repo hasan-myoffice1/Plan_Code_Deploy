@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import SectionTitle from '../components/SectionTitle';
 
 
+
 const Hero = ({ data, btnData , descText, heroImg}) => {
 
     return (
@@ -12,7 +13,9 @@ const Hero = ({ data, btnData , descText, heroImg}) => {
 
                 <div>
                     <span className='text-sm border dark:border-gray-800 border-gray-200 rounded-full px-4 py-1 uppercase leading-6'>{data.subtitle}</span>
-                    <SectionTitle data={data}/>
+
+                    <h1 className='text-title-h1 mb-6 lg:leading-16 leading-normal font-bold mt-3'>{data.text} <span className="text-primaryColor">{data.highlight}</span>{data.afterText} </h1>
+                    
                     <p className='dark:text-gray-400'>{descText}</p>
                     <Button data={btnData}/>
                     <a href="mailto:PlanCodeDeploy@gmail.com"
