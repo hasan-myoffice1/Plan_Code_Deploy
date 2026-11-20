@@ -52,15 +52,15 @@ export const serviceLinks = [
     },
     {
         label: "UI/UX Design",
-        path: "/ui-ux-design"
+        path: "/services/ui-ux-design"
     },
     {
         label: "Content Writing",
-        path: "/content-writing"
+        path: "/services/content-writing"
     },
     {
         label: "SEO",
-        path: "/seo"
+        path: "/services/seo"
     }
 ];
 export const otherLinks = [
