@@ -7,12 +7,25 @@ const navLinkClass = ({ isActive }) =>
         ? 'text-blue-500 font-semibold underline underline-offset-8'
         : 'text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400'}`;
 
+
 const services = [
-    'Web Development',
-    'Web Design',
-    'Content Writing',
-    'SEO',
-];
+    {
+        text : "Web Development",
+        link : "/services/web-development"
+    },
+    {
+        text : "Web Design",
+       link : "/services/Web-design"
+    },
+    {
+        text : "Content Writing",
+       link : "/services/Content-writing"
+    },
+    {
+        text : "SEO",
+       link : "/services/seo"
+    }
+]
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,12 +49,12 @@ const Nav = () => {
                     <div className='absolute left-0 top-full mt-3 min-w-48 rounded-lg border border-gray-200 bg-white p-2 shadow-lg dark:border-gray-700 dark:bg-gray-800'>
                         {services.map((service) => (
                             <NavLink
-                                key={service}
-                                to="/services"
+                                key={service.link}
+                                to={service.link}
                                 onClick={() => setIsOpen(false)}
                                 className='block rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-500 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-blue-400'
                             >
-                                {service}
+                                {service.text}
                             </NavLink>
                         ))}
                     </div>
