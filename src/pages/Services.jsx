@@ -7,6 +7,8 @@ import { PanelsTopLeft, CircleCheck, PencilRuler, PencilSparkles, ChartLine } fr
 import Button from '../components/Button';
 import CountdownSec from '../containers/CountdownSec';
 import CTA from '../containers/CTA';
+import FAQ from './../containers/FAQ';
+import Portfolio from './../containers/Portfolio';
 
 const title = {subtitle:"Our Services",text:'Professional web solutions designed for', highlight:'modern businesses', afterText:""}
 
@@ -129,6 +131,8 @@ const Services = () => {
               </div>
            </section>
            <CountdownSec />
+           <FAQ/>
+           <Portfolio/>
            <CTA/>
            <Footer/>
         </>

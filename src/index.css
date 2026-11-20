@@ -25,6 +25,6 @@
   section{
     @apply py-20
   }
-  p{@apply text-[18px]}
+  p{@apply text-[18px] dark:text-gray-300 }
   .content-view { @apply max-w-area px-5 mx-auto; }
 }
