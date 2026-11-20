@@ -1,14 +1,13 @@
 
-import { Mail } from 'lucide-react';
+import { Mail , Mouse} from 'lucide-react';
 import Button from '../components/Button';
-import SectionTitle from '../components/SectionTitle';
 
 
 
 const Hero = ({ data, btnData , descText, heroImg}) => {
 
     return (
-        <section className=''>
+        <section className='' id='#top'>
             <div className="content-view grid md:grid-cols-2 items-center">
 
                 <div>
@@ -28,6 +27,8 @@ const Hero = ({ data, btnData , descText, heroImg}) => {
                     <img src={heroImg} alt={data.subtitle}  className='w-full h-auto'/>
                 </div>
             </div>
+
+            <a href="#top" className='fixed bottom-10 right-20' title='go to top'><Mouse className='size-9 text-gray-500' /></a>
 
         </section>
     );
