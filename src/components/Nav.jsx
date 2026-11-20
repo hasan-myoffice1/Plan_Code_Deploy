@@ -14,12 +14,12 @@ const services = [
         link : "/services/web-development"
     },
     {
-        text : "Web Design",
-       link : "/services/Web-design"
+        text : "UI/UX Design",
+       link : "/services/ui-ux-design"
     },
     {
         text : "Content Writing",
-       link : "/services/Content-writing"
+       link : "/services/content-writing"
     },
     {
         text : "SEO",

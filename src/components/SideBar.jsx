@@ -8,10 +8,10 @@ const navLinkClass = ({ isActive }) =>
         : 'text-gray-700 hover:bg-gray-100 hover:text-blue-500 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-blue-400'}`;
 
 const services = [
-    'Web Development',
-    'Web Design',
-    'Content Writing',
-    'SEO',
+    { label: 'Web Development', path: '/services/web-development' },
+    { label: 'UI/UX Design', path: '/services/ui-ux-design' },
+    { label: 'Content Writing', path: '/services/content-writing' },
+    { label: 'SEO', path: '/services/seo' },
 ];
 
 const SideBar = ({ isOpen, onClose }) => {
@@ -54,12 +54,12 @@ const SideBar = ({ isOpen, onClose }) => {
                             <div className='mt-2 ml-3 flex flex-col gap-1 border-l border-gray-200 pl-3 dark:border-gray-700'>
                                 {services.map((service) => (
                                     <NavLink
-                                        key={service}
-                                        to='/services'
+                                        key={service.path + service.label}
+                                        to={service.path}
                                         onClick={onClose}
                                         className='rounded-md px-2 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-500 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-blue-400'
                                     >
-                                        {service}
+                                        {service.label}
                                     </NavLink>
                                 ))}
                             </div>

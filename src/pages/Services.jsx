@@ -53,7 +53,7 @@ const servicesData = [
     ],
     buttonInfo: {
       text: "About UI/UX Design",
-      link: "#",
+      link: "/services/ui-ux-design",
       class: "bg-primaryColor text-white mt-10",
     },
   },
@@ -61,26 +61,6 @@ const servicesData = [
     category: "WRITING",
     title: "Content Strategy & Copywriting",
     icon: <PencilSparkles  className='size-30 border-b pb-10'/>,
-    description:
-      "We optimize websites to improve search engine visibility, increase qualified traffic, and generate sustainable business growth through proven SEO strategies.",
-    features: [
-      "Technical SEO Audits",
-      "On-Page Optimization",
-      "Website Speed Optimization",
-      "Keyword Strategy",
-      "Local SEO",
-      "Performance Reporting",
-    ],
-    buttonInfo: {
-      text: "About Content Writing",
-      link: "#",
-      class: "bg-primaryColor text-white mt-10",
-    },
-  },
-  {
-    category: "WRITING",
-    title: "SEO Optimization",
-    icon: <ChartLine  className='size-30 border-b pb-10'/>,
     description:
       "High-quality content builds trust, improves search visibility, and converts visitors into customers. We create compelling website content that communicates your value and supports your marketing goals.",
     features: [
@@ -92,8 +72,28 @@ const servicesData = [
       "Brand Messaging",
     ],
     buttonInfo: {
+      text: "About Content Writing",
+      link: "/services/content-writing",
+      class: "bg-primaryColor text-white mt-10",
+    },
+  },
+  {
+    category: "WRITING",
+    title: "SEO Optimization",
+    icon: <ChartLine  className='size-30 border-b pb-10'/>,
+    description:
+      "We optimize websites to improve search engine visibility, increase qualified traffic, and generate sustainable business growth through proven SEO strategies.",
+    features: [
+      "Technical SEO Audits",
+      "On-Page Optimization",
+      "Website Speed Optimization",
+      "Keyword Strategy",
+      "Local SEO",
+      "Performance Reporting",
+    ],
+    buttonInfo: {
       text: "About SEO",
-      link: "#",
+      link: "/services/seo",
       class: "bg-primaryColor text-white mt-10",
     },
   },
