@@ -7,6 +7,7 @@ import CountdownSec from './../containers/CountdownSec';
 import CTA from './../containers/CTA';
 import WorkProcess from './../containers/WorkProcess';
 import Testimonials from './../containers/Testimonials';
+import SuperTitle from '../components/SuperTitle';
 
 <img src="/src/assets//aboutpage.png" alt="" />
 
@@ -29,9 +30,7 @@ const About = () => {
                         <img src={AboutSection} alt="Plan Code Deploy team" className="h-auto w-full rounded-2xl object-cover" />
                     </div>
                     <div className="mt-10 rounded-2xl border-l-2 border-primaryColor bg-white px-5 py-6 lg:-ml-45 lg:mt-0 lg:p-15 dark:bg-night">
-                        <span className="text-sm border dark:border-gray-800 border-gray-200 rounded-full px-4 py-1 uppercase leading-10 text-primaryColor tracking-[2px]">
-                        about the company
-                        </span>
+                        <SuperTitle subtitle="about the company" />
                         <h2 className="text-2xl md:text-3xl mt-3 mb-5 font-semibold leading-tight">Your trusted
                         partner for modern web development and digital innovation</h2>
                         <p className="dark:text-gray-400">PlanCodeDeploy is a full-service web development agency dedicated to helping businesses succeed in an increasingly digital world. We specialize in designing and developing high-performance websites, scalable web applications, and intuitive user experiences that align with your business goals.</p>

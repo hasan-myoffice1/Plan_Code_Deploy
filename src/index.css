@@ -11,8 +11,8 @@
   --color-light-section: #F1F3F4;
   --container-area: 1240px;
 
-  --text-title-h1 : clamp(1.75rem, 4vw + 1rem, 3.4375rem);
-  --text-title-h2 : clamp(1.75rem, 4vw + 1rem, 2.7rem);
+  --text-title-h1 : clamp(1.75rem, 3.8vw + 1rem, 3.375rem);
+  --text-title-h2 : clamp(1.75rem, 3.8vw + 1rem, 2.7rem);
 }
 
 @layer {

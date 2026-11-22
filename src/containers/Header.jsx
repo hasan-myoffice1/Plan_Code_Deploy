@@ -10,11 +10,11 @@ import SideBar from './../components/SideBar';
 const Header = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-    const buttonInfo = { text: "Free Quote", link: "/contact", class: "bg-blue-700 text-white hidden lg:block" };
+    const buttonInfo = { text: "Free Quote", link: "/contact", class: "bg-primaryColor text-white hidden lg:block" };
 
     return (
         <>
-            <header className='py-2 transition-colors'>
+            <header className='py-2 transition-colors sticky top-0 bg-day dark:bg-night z-50'>
                 <div className='content-view hidden md:flex flex-wrap justify-between items-center mx-auto'>
                     <Logo data={'max-w-60'} />
                     <Nav />

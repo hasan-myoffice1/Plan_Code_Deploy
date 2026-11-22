@@ -50,7 +50,7 @@ const OurServices = () => {
                         return (
                             <article
                                 key={service.link}
-                                className="rounded-xl border-2 border-gray-100 bg-white p-6 transition-colors hover:border-primaryColor dark:border-gray-700 dark:bg-gray-800 shadow-xl"
+                                className="rounded-xl border-2 border-gray-100 bg-white p-6 hover:scale-105 duration-300 transition-all hover:border-primaryColor dark:border-gray-700 dark:bg-gray-800 shadow-xl"
                             >
                                 <h3 className="text-xl font-semibold">{service.title}</h3>
 

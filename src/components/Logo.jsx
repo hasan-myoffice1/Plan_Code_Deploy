@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from '/logo.png'
 import logoL from '/logo_light_mood.png'
+import { Link } from "react-router";
 
 
 const Logo = (p) => {
@@ -23,7 +24,7 @@ const Logo = (p) => {
     }, []);
 
     return (
-      <img src={isDark ? logo : logoL} alt="plan code deploy logo" title='PCD Company Logo' className={p.data} />
+      <Link to='/'><img src={isDark ? logo : logoL} alt="plan code deploy logo" title='PCD Company Logo' className={p.data} /></Link>
     );
 };
 
