@@ -9,6 +9,7 @@ import CountdownSec from '../containers/CountdownSec';
 import CTA from '../containers/CTA';
 import FAQ from './../containers/FAQ';
 import Portfolio from './../containers/Portfolio';
+import SuperTitle from '../components/SuperTitle';
 
 const title = {subtitle:"Our Services",text:'Professional web solutions designed for', highlight:'modern businesses', afterText:""}
 
@@ -111,7 +112,7 @@ const Services = () => {
                  {
                     servicesData.map((service, index)=> (
                         <div key={index} className="grid-cols-1">
-                            <span className='text-sm border dark:border-gray-700 border-gray-200 rounded-full px-4 py-1 uppercase leading-6'>{service.category}</span>
+                            <SuperTitle subtitle={service.category} />
                             <h2 className='text-2xl mb-6 lg:leading-16 leading-normal font-semibold mt-3'>{service.title}</h2>
                             <div className=''> {service.icon}</div>
                             <p className='mt-10'>{service.description}</p>

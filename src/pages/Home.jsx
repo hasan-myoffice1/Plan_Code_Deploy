@@ -70,6 +70,7 @@ const Home = () => {
         <>
             <Header/>
             <Hero data={title} btnData={buttonInfo} descText= {desc} heroImg={heroImg}/>
+
             {/* About Company Section  */}
             <section className='bg-light-section dark:bg-gray-section'>
                 <div className="content-view">
@@ -94,9 +95,11 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
             <OurServices/>
             <Testimonials/>
             <Portfolio/>
+
             <section className='bg-light-section dark:bg-gray-section'>
                 <div className='content-view'>
                     <div className='mx-auto max-w-230 text-center'>
@@ -109,7 +112,7 @@ const Home = () => {
                         {reasonsToChooseUs.map((reason) => (
                             <article
                                 key={reason.number}
-                                className='rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800'
+                                className='rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800 hover:scale-105 duration-300 transition-all'
                             >
                                 <span className='text-3xl font-semibold text-primaryColor'>
                                     {reason.number}
@@ -121,6 +124,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
             <FAQ/>
             <CTA/>
             <Footer/>

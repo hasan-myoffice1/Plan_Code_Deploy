@@ -21,7 +21,7 @@ const Contact = () => {
           <Header/>
            <Hero data={title} btnData={buttonInfo} descText= {desc} heroImg={HeroContact}/>
 
-            <section className=''>
+            <section className='bg-light-section dark:bg-gray-section'>
                 <div className="content-view">
                     <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:p-20 items-center">
                         <div>
